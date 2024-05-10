@@ -15,12 +15,12 @@ let step1 = document.getElementById('one');
 let step2 = document.getElementById('two');
 let step3 = document.getElementById('three');
 
-stepOne.addEventListener("mousemove", function(){
+stepOne.addEventListener("click", function(){
     step1.innerHTML='01';
 });
-stepTwo.addEventListener("mousemove", function(){
+stepTwo.addEventListener("click", function(){
     step2.innerHTML='02';
 });
-stepThree.addEventListener("mousemove", function(){
+stepThree.addEventListener("click", function(){
     step3.innerHTML='03';
 });
