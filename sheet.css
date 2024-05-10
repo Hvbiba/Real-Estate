@@ -185,3 +185,111 @@ h2{
     transform: translateY(-20px);
 }
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 40px;
+    border-top: 5px black solid;
+}
+footer a {
+    display: block;
+    color: black;
+}
+footer p{
+    padding: 10px;
+}
+footer pre{
+    font-size: 16px;
+}
+footer pre i {
+    padding: 5px;
+    font-size: 30px;
+    color: #17299d;
+}
+footer h4 , footer h5 {
+    color: #17299d;
+    font-family: "Platypi", serif;
+}
+footer .mediaIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+    color: #17299d;
+}
+#imges{
+    display: flex;
+}
+#imges img {
+    padding: 20px;
+}
+#about{
+    display: flex;
+    padding: 30px 10px 30px 10px;
+    color: #817f7f;
+}
+#about #content{
+   padding: 60px 0px 0px 60px;
+}
+@media (max-width: 576px){
+    #imges img {
+        padding: 10px;
+        width: 200px;
+    }
+    #about{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+    #about #content{
+        padding:10px;
+        margin: 10px;
+     }
+     footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 0px 20px 30px;
+    }
+    footer p{
+        padding: 5px 20px 0px 7px;
+    }
+    footer .mediaIcons {
+        padding:0px 20px 10px 10px;
+    }
+}
+.Services , .Stages{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.Services div  , .Stages div{
+    margin: 10px;
+    background-color: #eee;
+    padding: 15px;
+}
+.Stages div {
+    width: 280px;
+}
+.Services div i  , .Stages div label{
+    font-size: 30px;
+    color: #17299d;
+}
+.Services div:hover{
+    box-shadow: #17299d 3px 3px 3px 3px;
+}
+@media (max-width: 576px){
+    .Services , .Stages{
+        flex-wrap: wrap;
+    }
+    .Stages div {
+        width: 280px;
+        margin: 10px 0px 10px 0px;
+    }
+    h3{
+        letter-spacing: 2px;
+    }
+}
