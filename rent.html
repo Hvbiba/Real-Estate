@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--bootstrab link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+<!--font awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!-- css link -->
+<link rel="stylesheet" href="sheet.css">
+<title>RealEstate Rent</title>
+</head>
+<body>
+<div id="rentPage" class="rentPage">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <h4> <i class="fa fa-home" aria-hidden="true"></i> Agency</h4>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span><i class="fa fa-bars" aria-hidden="true" id="bar"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Offers
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./rent.html">Buying</a></li>
+                      <li><a class="dropdown-item" href="./buy.html">Selling</a></li>
+                      <li><a class="dropdown-item" href="#">Buying & Selling</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+        <div class="rank">
+            <p>Search Property By Filters <i class="fa fa-sort-amount-desc" aria-hidden="true" id="rank"></i></p>
+        </div>
+        <div>
+        <div id="dropdowns">
+                <div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-light">Purpose</button>
+                            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Buy</a></li>
+                            <li><a class="dropdown-item" href="#">Rent</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light">Rent Frequency</button>
+                        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Daily</a></li>
+                        <li><a class="dropdown-item" href="#">Weakly</a></li>
+                        <li><a class="dropdown-item" href="#">Monthly</a></li>
+                        <li><a class="dropdown-item" href="#">Yearly</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    <div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-light">Mini Price</button>
+                            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">10 k</a></li>
+                            <li><a class="dropdown-item" href="#">20 k</a></li>
+                            <li><a class="dropdown-item" href="#">30 k</a></li>
+                            <li><a class="dropdown-item" href="#">40 k</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light">Max Price</button>
+                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">100 k</a></li>
+                                <li><a class="dropdown-item" href="#">110 k</a></li>
+                                <li><a class="dropdown-item" href="#">120 k</a></li>
+                                <li><a class="dropdown-item" href="#">130 k</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light">Sort</button>
+                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Low Price</a></li>
+                                <li><a class="dropdown-item" href="#">Heigh Price</a></li>
+                                <li><a class="dropdown-item" href="#">Newest</a></li>
+                                <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light">Rooms</button>
+                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">3 Rooms</a></li>
+                                <li><a class="dropdown-item" href="#">4 Rooms</a></li>
+                                <li><a class="dropdown-item" href="#">5 Rooms</a></li>
+                                <li><a class="dropdown-item" href="#">6 Rooms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light">Baths</button>
+                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">1 Bath</a></li>
+                                <li><a class="dropdown-item" href="#">2 Baths</a></li>
+                                <li><a class="dropdown-item" href="#">3 Baths</a></li>
+                                </ul>
+                            </div>
+                        </div>
+            </div>
+        </div>
+</div>
+<!--show rent items-->
+<h2>Properties for-rent</h2>
+    <div id="rentItems" class="container">
+            <div class="card" style="width: 18rem;">
+                <img src="rent1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <pre><span> New </span>    5 Rooms | 2 Baths</pre>
+                    <p class="price">AED999,999/yearly</p>
+                    <div>
+                        <p> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <h6>50 Reviews</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="rent2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <pre><span> New </span>    5 Rooms | 2 Baths</pre>
+                    <p class="price">AED999,999/yearly</p>
+                    <div>
+                        <p> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <h6>50 Reviews</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="rent3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <pre><span> New </span>    5 Rooms | 2 Baths</pre>
+                    <p class="price">AED999,999/yearly</p>
+                    <div>
+                        <p> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <h6>50 Reviews</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="rent4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <pre><span> New </span>    5 Rooms | 2 Baths</pre>
+                    <p class="price">AED999,999/yearly</p>
+                    <div>
+                        <p> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <h6>50 Reviews</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="rent5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <pre><span> New </span>    5 Rooms | 2 Baths</pre>
+                    <p class="price">AED999,999/yearly</p>
+                    <div>
+                        <p> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <h6>50 Reviews</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="rent6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <pre><span> New </span>    5 Rooms | 2 Baths</pre>
+                    <p class="price">AED999,999/yearly</p>
+                    <div>
+                        <p> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <h6>50 Reviews</h6>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

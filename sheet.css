@@ -1,0 +1,187 @@
+body{
+    font-family: sans-serif;
+}
+.home {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), 
+                url('2cd556c56b79bf34df6573b9302d3cbd.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; height: 100vh;
+}
+#homePage{
+    color: #eee;
+    text-align: center;
+}
+#homePage h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 5px;
+  padding: 10px;
+}
+header , .nav-link , .dropdown-item , header:hover , .nav-link:hover , .dropdown-item:hover {
+    color: #eee;
+}
+.dropdown-menu , .dropdown-menu a:hover{
+    background-color: #436abd;
+    color: #eee;
+}
+header h4{
+    font-family: "Platypi", serif;
+    font-weight: 400;
+    margin-right: 280px;
+}
+#homePage span{
+    color:#17299d  ;
+}
+#homePage{
+    padding: 100px 50px 50px 50px;
+}
+#homePage div button{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+}
+@media (max-width: 576px){
+    #homePage h1 {
+        font-weight: 600;
+        letter-spacing: 3px;
+        padding: 10px;
+        font-size: 36px;
+      }
+      #homePage p{
+        padding: 6px;
+      }
+      header h4 , header #bar{
+        font-weight: bolder;
+        margin-right: 0px;
+        font-size: 33px;
+    }
+    #homePage{
+        padding:80px 10px 10px 10px ;
+    }
+    #homePage div button{
+        font-size: 20px;
+        margin: 5px;
+        padding: 5px;
+
+    }
+    header , .nav-link , .dropdown-item ,
+     header:hover , .nav-link:hover , .dropdown-item:hover, #homePage p{
+        font-size: 20px;
+     }
+}
+#offers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+#offers .card{
+    transition: transform 0.3s ease-in-out;
+}
+#offers .card:hover{
+    transform: translateY(-15px);
+}
+h3{
+    text-align: center;
+    padding: 20px;
+    font-family: "Platypi", serif;
+    font-weight: 600;
+    color: #17299d;
+    letter-spacing: 5px;
+}
+@media (max-width: 576px){
+    h3{
+        padding: 20px;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+    #offers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px; 
+    }
+}
+/* rent & buy pages*/
+#rentPage .rank , #buyPage .rank{
+    text-align: center;
+    background-color: #eee;
+    color: black;
+    font-size: 20px;
+    font-family: "Platypi", serif;
+    font-weight: bold;
+    padding: 5px;
+}
+#rentPage header , #buyPage header{
+    background-color: #436abd;
+}
+#dropdowns {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #eee;
+    display: none;
+}
+#dropdowns div{
+    margin: 10px;
+}
+#dropdowns .dropdown-menu{
+    background-color: #eee;
+}
+#dropdowns .dropdown-item {
+    color: black;
+}
+#rank{
+    cursor: pointer;
+}
+
+@media (max-width: 576px){
+    #rentPage .rank , #buyPage .rank{
+        padding: 10px;
+    }
+    #dropdowns div{
+        margin: 5px;
+    }
+}
+h2{
+    font-family: "Platypi", serif;
+    padding: 15px;
+}
+#rentItems , #buyItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#rentItems .card , #buyItems .card{
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+#rentItems .card:hover , #buyItems .card:hover{
+    transform: translateY(-10px);
+}
+#rentItems .card-body div , #buyItems .card-body div{
+    display: flex;
+}
+#rentItems .card-body pre span , #buyItems .card-body pre span {
+    color: rgb(204, 82, 82);
+    background-color: rgb(246, 160, 160);
+    padding: 3px 3px 0px 3px;
+}
+#rentItems .card-body .price ,#buyItems .card-body .price {
+   font-weight: bold;
+   color: black;
+}
+#rentItems .card-body p , #buyItems .card-body p{
+    color:  #FFC300;
+}
+#rentItems .card-body h6 ,#buyItems .card-body h6{
+    padding: 2px 2px 0px 30px;
+}
+@media (max-width: 576px){
+    #rentItems .card , #buyItems .card{
+        margin: 20px 10px 10px 10px;
+    }
+    #rentItems .card:hover , #buyItems .card:hover{
+    transform: translateY(-20px);
+}
+}
